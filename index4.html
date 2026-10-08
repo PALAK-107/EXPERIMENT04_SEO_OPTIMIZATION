@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport"
+         content="width=device-width, initial-scale=1.0">
+   <!-- SEO META TAGS -->
+   <meta name="description"
+         content="A simple static website demonstrating GitHub repositories, branches, merging changes and GitHub Pages.">
+   <meta name="keywords"
+         content="HTML, CSS, GitHub, GitHub Pages, Web Design, Static Website">
+   <meta name="author"
+         content="Web Design Lab">
+   <meta name="robots"
+         content="index, follow">
+   <title>
+       Web Design Experiment 04 | SEO and Accessibility
+   </title>
+   <style>
+       body {
+           font-family: Arial, sans-serif;
+           margin: 0;
+           background: linear-gradient(
+               135deg,
+               #020617,
+               #1e293b,
+               #312e81
+           );
+           color: #ffffff;
+           line-height: 1.6;
+       }
+       /* ---------- HEADER ---------- */
+
+
+       header {
+           background: #020617;
+           padding: 30px 20px;
+           text-align: center;
+       }
+
+
+       header h1 {
+           margin-bottom: 8px;
+       }
+       /* ---------- NAVIGATION ---------- */
+
+
+       nav {
+           background: #334155;
+           padding: 15px;
+           text-align: center;
+       }
+
+
+       nav a {
+           color: #ffffff;
+           text-decoration: none;
+           margin: 0 15px;
+           font-weight: bold;
+       }
+
+
+       nav a:hover,
+       nav a:focus {
+           text-decoration: underline;
+       }
+
+
+
+
+       /* ---------- MAIN ---------- */
+
+
+       main {
+           max-width: 950px;
+           margin: auto;
+       }
+
+
+       section {
+           padding: 35px 20px;
+       }
+
+
+
+
+       /* ---------- CARDS ---------- */
+
+
+       .card {
+           background: #ffffff;
+           color: #222222;
+           padding: 25px;
+           margin-top: 20px;
+           border-radius: 10px;
+           box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+       }
+       /* ---------- OPTIMIZATION SECTION ---------- */
+
+
+       .optimization-card {
+           border-left: 6px solid #2563eb;
+       }
+
+
+       .optimization-card h2 {
+           color: #1e3a8a;
+       }
+
+
+       .optimization-list {
+           padding-left: 20px;
+       }
+
+
+       .optimization-list li {
+           margin-bottom: 12px;
+       }
+
+
+       .tag {
+           display: inline-block;
+           background: #dbeafe;
+           color: #1e3a8a;
+           padding: 4px 8px;
+           border-radius: 5px;
+           font-family: monospace;
+           font-weight: bold;
+       }
+       /* ---------- ACCESSIBILITY DEMO ---------- */
+
+
+       .accessibility-box {
+           background: #f1f5f9;
+           border-radius: 8px;
+           padding: 20px;
+           margin-top: 15px;
+       }
+       /* ---------- FOOTER ---------- */
+
+
+       footer {
+           background: #020617;
+           color: #ffffff;
+           text-align: center;
+           padding: 20px;
+           margin-top: 30px;
+       }
+       /* ---------- RESPONSIVE DESIGN ---------- */
+
+
+       @media (max-width: 600px) {
+
+
+           nav a {
+               display: block;
+               margin: 8px 0;
+           }
+
+
+           section {
+               padding: 25px 15px;
+           }
+
+
+       }
+
+
+   </style>
+</head>
+<body>
+   <!-- HEADER -->
+   <header>
+       <h1>
+           Web Design Experiment 04
+       </h1>
+
+
+       <p>
+           SEO and Accessibility Optimization
+       </p>
+   </header>
+   <!-- NAVIGATION -->
+
+
+   <nav aria-label="Main navigation">
+
+
+       <a href="#home">Home</a>
+
+
+       <a href="#process">Process</a>
+
+
+       <a href="#optimization">Optimization</a>
+
+
+       <a href="#accessibility">Accessibility</a>
+
+
+   </nav>
+
+
+   <main>
+       <!-- HOME -->
+
+
+       <section id="home"
+                aria-labelledby="home-heading">
+
+
+           <div class="card">
+
+
+               <h2 id="home-heading">
+                   Simple Static Website
+               </h2>
+
+
+               <p>
+                   This webpage demonstrates a static website
+                   created using HTML and CSS and published
+                   using GitHub Pages.
+               </p>
+
+
+               <p>
+                   The original static webpage has been
+                   optimized for search engines, accessibility,
+                   semantic structure and mobile devices.
+               </p>
+
+
+           </div>
+       </section>
+
+
+       <!-- PROCESS -->
+       <section id="process"
+                aria-labelledby="process-heading">
+           <div class="card">
+
+
+               <h2 id="process-heading">
+                   GitHub Pages Publishing Process
+               </h2>
+               <ol>
+                   <li>
+                       Create a GitHub repository.
+                   </li>
+                   <li>
+                       Create a branch for changes.
+                   </li>
+                   <li>
+                       Commit and push the changes.
+                   </li>
+                   <li>
+                       Merge the branch into the main branch.
+                   </li>
+
+
+                   <li>
+                       Enable GitHub Pages.
+                   </li>
+                   <li>
+                       Publish the static website.
+                   </li>
+               </ol>
+           </div>
+       </section>
+
+
+       <!-- SEO OPTIMIZATION -->
+       <section id="optimization"
+                aria-labelledby="optimization-heading">
+           <div class="card optimization-card">
+               <h2 id="optimization-heading">
+                   SEO Optimizations Implemented
+               </h2>
+               <p>
+                   The following SEO techniques have been
+                   applied to improve the visibility and
+                   structure of this webpage.
+               </p>
+
+
+               <ul class="optimization-list">
+                   <li>
+                       <span class="tag">&lt;title&gt;</span>
+                       Descriptive page title added.
+                   </li>
+                   <li>
+                       <span class="tag">&lt;meta description&gt;</span>
+                       Added a description explaining
+                       the webpage content.
+                   </li>
+                   <li>
+                       <span class="tag">&lt;meta keywords&gt;</span>
+                       Added relevant keywords related
+                       to web design and GitHub Pages.
+                   </li>
+                   <li>
+                       <span class="tag">&lt;meta robots&gt;</span>
+                       Allows search engines to index
+                       and follow the webpage.
+                   </li>
+                   <li>
+                       <strong>Semantic HTML</strong>
+                       used to give meaningful structure
+                       to the webpage.
+                   </li>
+                   <li>
+                       Proper heading hierarchy using
+                       <strong>H1 and H2</strong> headings.
+                   </li>
+                   <li>
+                       Meaningful and descriptive content
+                       added to the webpage.
+                   </li>
+               </ul>
+           </div>
+
+
+       </section>
+
+
+       <!-- ACCESSIBILITY -->
+       <section id="accessibility"
+                aria-labelledby="accessibility-heading">
+
+
+           <div class="card">
+
+
+               <h2 id="accessibility-heading">
+                    Accessibility Optimizations
+               </h2>
+
+
+               <div class="accessibility-box">
+                   <ul>
+
+
+                       <li>
+                           <strong>Semantic HTML:</strong>
+                           Header, navigation, main and
+                           section elements are used.
+                       </li>
+
+
+                       <li>
+                           <strong>ARIA labels:</strong>
+                           Navigation and sections include
+                           accessible labels.
+                       </li>
+
+
+                       <li>
+                           <strong>Keyboard navigation:</strong>
+                           Navigation links have visible
+                           focus states.
+                       </li>
+
+
+                       <li>
+                           <strong>Readable text:</strong>
+                           Proper spacing and line height
+                           improve readability.
+                       </li>
+                       <li>
+                           <strong>Responsive design:</strong>
+                           The webpage adapts to smaller
+                           screens.
+                       </li>
+                       <li>
+                           <strong>Clear structure:</strong>
+                           Content is divided into meaningful
+                           sections.
+                       </li>
+                   </ul>
+               </div>
+           </div>
+       </section>
+       <!-- ABOUT -->
+
+
+       <section id="about"
+                aria-labelledby="about-heading">
+
+
+           <div class="card">
+
+
+               <h2 id="about-heading">
+                   About GitHub Pages
+               </h2>
+               <p>
+                   GitHub Pages allows static websites containing HTML, CSS and JavaScript
+                   to be published directly from a GitHub repository.
+               </p>
+           </div>
+       </section>
+   </main>
+   <!-- FOOTER -->
+
+
+   <footer>
+       <p>
+           Web Design Lab — Experiment 04
+       </p>
+       <p>
+           SEO • Accessibility • Semantic HTML • Responsive Design
+       </p>
+
+
+   </footer>
+</body>
+
+
+</html>
