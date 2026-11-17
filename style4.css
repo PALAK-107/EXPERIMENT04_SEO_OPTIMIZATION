@@ -41,3 +41,9 @@ a:focus {
         padding-bottom: 90px !important;
     }
 }
+
+/* Accessibility: keyboard focus */
+a:focus {
+    outline: 2px solid blue;
+    outline-offset: 3px;
+}
